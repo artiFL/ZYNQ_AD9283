@@ -1,0 +1,67 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+XilinxAXIVIP: Found at Path: design_1_wrapper.design_1_i.processing_system7_0.inst.M_AXI_GP0.master
+[0] : *ZYNQ_VIP_INFO : M_AXI_GP0 : Port is ENABLED.
+XilinxAXIVIP: Found at Path: design_1_wrapper.design_1_i.processing_system7_0.inst.M_AXI_GP1.master
+[0] : *ZYNQ_VIP_INFO : M_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: design_1_wrapper.design_1_i.processing_system7_0.inst.S_AXI_GP0.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_GP0 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: design_1_wrapper.design_1_i.processing_system7_0.inst.S_AXI_GP1.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: design_1_wrapper.design_1_i.processing_system7_0.inst.S_AXI_HP0.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP0 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: design_1_wrapper.design_1_i.processing_system7_0.inst.S_AXI_HP1.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP1 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: design_1_wrapper.design_1_i.processing_system7_0.inst.S_AXI_HP2.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP2 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: design_1_wrapper.design_1_i.processing_system7_0.inst.S_AXI_HP3.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP3 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: design_1_wrapper.design_1_i.processing_system7_0.inst.S_AXI_ACP.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_ACP : Port is DISABLED.
+                   0 else checking line ......x
+WARNING: 10 ns design_1_wrapper.design_1_i.processing_system7_0.inst.M_AXI_GP0.master.IF : ARESET_N can't be X/Z after 1 cycle of clock. To downgrade, use <hierarchy_path to VIP>.IF.set_enable_xchecks_to_warn(), or filter using clr_enable_xchecks.
+Stopped at time : 50 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 48
+Stopped at time : 50 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 57
+Stopped at time : 150 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 48
+Stopped at time : 150 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 57
+Stopped at time : 250 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 48
+Stopped at time : 250 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 57
+Stopped at time : 350 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 48
+Stopped at time : 350 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 57
+Stopped at time : 450 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 48
+Stopped at time : 450 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 57
+Stopped at time : 550 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 48
+Stopped at time : 550 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 57
+Stopped at time : 650 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 48
+Stopped at time : 650 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 57
+Stopped at time : 750 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 48
+Stopped at time : 750 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 57
+Stopped at time : 850 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 48
+Stopped at time : 850 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 57
+Stopped at time : 950 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 48
+Stopped at time : 950 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 57
+Stopped at time : 1050 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 48
+Stopped at time : 1050 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 57
+Stopped at time : 1150 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 48
+Stopped at time : 1150 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 57
+Stopped at time : 1250 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 48
+Stopped at time : 1250 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 57
+Stopped at time : 1350 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 48
+Stopped at time : 1350 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 57
+Stopped at time : 1450 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 48
+Stopped at time : 1450 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 57
+Stopped at time : 1550 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 48
+Stopped at time : 1550 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 57
+Stopped at time : 1650 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 48
+Stopped at time : 1650 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 57
+Stopped at time : 1750 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 48
+Stopped at time : 1750 ns : File "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" Line 57
+Stopped at ti

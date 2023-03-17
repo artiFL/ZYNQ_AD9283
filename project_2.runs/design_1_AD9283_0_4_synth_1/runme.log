@@ -1,0 +1,352 @@
+
+*** Running vivado
+    with args -log design_1_AD9283_0_4.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_AD9283_0_4.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source design_1_AD9283_0_4.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'A:/Work/XX/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.cache/ip 
+Command: synth_design -top design_1_AD9283_0_4 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4144 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 708.473 ; gain = 178.504
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_AD9283_0_4' [c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_AD9283_0_4/synth/design_1_AD9283_0_4.v:56]
+INFO: [Synth 8-6157] synthesizing module 'AD9283_v1_0' [c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/b109/hdl/AD9283_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'AD9283_v1_0_S00_AXI' [c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/b109/hdl/AD9283_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/b109/hdl/AD9283_v1_0_S00_AXI.v:380]
+INFO: [Synth 8-6155] done synthesizing module 'AD9283_v1_0_S00_AXI' (1#1) [c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/b109/hdl/AD9283_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'AD9283_v1_0' (2#1) [c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/b109/hdl/AD9283_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_AD9283_0_4' (3#1) [c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_AD9283_0_4/synth/design_1_AD9283_0_4.v:56]
+WARNING: [Synth 8-3331] design AD9283_v1_0_S00_AXI has unconnected port PIN_FLAG
+WARNING: [Synth 8-3331] design AD9283_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design AD9283_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design AD9283_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design AD9283_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design AD9283_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design AD9283_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 774.992 ; gain = 245.023
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 774.992 ; gain = 245.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 774.992 ; gain = 245.023
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 882.062 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 885.039 ; gain = 2.977
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 885.039 ; gain = 355.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 885.039 ; gain = 355.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 885.039 ; gain = 355.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 885.039 ; gain = 355.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   3 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AD9283_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   3 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design design_1_AD9283_0_4 has unconnected port pin_flag
+WARNING: [Synth 8-3331] design design_1_AD9283_0_4 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design design_1_AD9283_0_4 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design design_1_AD9283_0_4 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design design_1_AD9283_0_4 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design design_1_AD9283_0_4 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design design_1_AD9283_0_4 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[8]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[9]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[10]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[11]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[12]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[13]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[14]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[15]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[16]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[17]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[18]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[19]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[20]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[21]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[22]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[23]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[24]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[25]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[26]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[27]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[28]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[29]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[30]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/AD9283_v1_0_S00_AXI_inst/slv_reg3_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/AD9283_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/AD9283_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/AD9283_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/AD9283_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 885.039 ; gain = 355.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 885.039 ; gain = 355.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 885.039 ; gain = 355.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 885.039 ; gain = 355.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 894.008 ; gain = 364.039
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 894.008 ; gain = 364.039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 894.008 ; gain = 364.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 894.008 ; gain = 364.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 894.008 ; gain = 364.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 894.008 ; gain = 364.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     8|
+|2     |LUT1   |     3|
+|3     |LUT2   |     1|
+|4     |LUT3   |     2|
+|5     |LUT4   |    18|
+|6     |LUT5   |    27|
+|7     |LUT6   |    15|
+|8     |FDRE   |   178|
+|9     |FDSE   |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------------+--------------------+------+
+|      |Instance                     |Module              |Cells |
++------+-----------------------------+--------------------+------+
+|1     |top                          |                    |   254|
+|2     |  inst                       |AD9283_v1_0         |   254|
+|3     |    AD9283_v1_0_S00_AXI_inst |AD9283_v1_0_S00_AXI |   254|
++------+-----------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 894.008 ; gain = 364.039
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 894.008 ; gain = 253.992
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 894.008 ; gain = 364.039
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 909.355 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+49 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 909.355 ; gain = 612.746
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 909.355 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.runs/design_1_AD9283_0_4_synth_1/design_1_AD9283_0_4.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_AD9283_0_4, cache-ID = c3644f34729955c5
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 909.355 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.runs/design_1_AD9283_0_4_synth_1/design_1_AD9283_0_4.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_AD9283_0_4_utilization_synth.rpt -pb design_1_AD9283_0_4_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 18 03:22:10 2023...

@@ -1,0 +1,1947 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>user.org</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>design_1_AD9283_0_4</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm_rtl" spirit:version="1.0"/>
+      <spirit:slave>
+        <spirit:memoryMapRef spirit:memoryMapRef="S00_AXI"/>
+      </spirit:slave>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awaddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WSTRB</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wstrb</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_araddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>WIZ_DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>WIZ_NUM_REG</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WIZ_NUM_REG" spirit:minimum="4" spirit:maximum="512" spirit:rangeType="long">4</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>SUPPORTS_NARROW_BURST</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.SUPPORTS_NARROW_BURST" spirit:choiceRef="choice_pairs_ce1226b1">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.DATA_WIDTH">32</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PROTOCOL</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.PROTOCOL">AXI4LITE</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.FREQ_HZ">50000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ID_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.ID_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ADDR_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.ADDR_WIDTH">4</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>AWUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.AWUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ARUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.ARUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>WUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>RUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.RUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>BUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.BUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>READ_WRITE_MODE</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.READ_WRITE_MODE">READ_WRITE</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_BURST</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.HAS_BURST">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_LOCK</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.HAS_LOCK">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_PROT</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.HAS_PROT">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_CACHE</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.HAS_CACHE">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_QOS</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.HAS_QOS">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_REGION</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.HAS_REGION">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_WSTRB</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.HAS_WSTRB">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_BRESP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.HAS_BRESP">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_RRESP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.HAS_RRESP">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_READ_OUTSTANDING</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.NUM_READ_OUTSTANDING">2</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_WRITE_OUTSTANDING</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.NUM_WRITE_OUTSTANDING">2</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>MAX_BURST_LENGTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.MAX_BURST_LENGTH">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.PHASE">0.000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.CLK_DOMAIN">design_1_processing_system7_0_0_FCLK_CLK0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_READ_THREADS</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.NUM_READ_THREADS">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_WRITE_THREADS</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.NUM_WRITE_THREADS">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>RUSER_BITS_PER_BYTE</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.RUSER_BITS_PER_BYTE">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>WUSER_BITS_PER_BYTE</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WUSER_BITS_PER_BYTE">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.S00_AXI.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI_RST</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.S00_AXI_RST.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI_CLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_BUSIF">S00_AXI</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_RESET">s00_axi_aresetn</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.FREQ_HZ">50000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.PHASE">0.000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.CLK_DOMAIN">design_1_processing_system7_0_0_FCLK_CLK0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>RESET_N_ADC</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>RESET_N_ADC</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.RESET_N_ADC.POLARITY">ACTIVE_LOW</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.RESET_N_ADC.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>ADC_CLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>adc_clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.ADC_CLK.FREQ_HZ"/>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.ADC_CLK.PHASE">0.000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.ADC_CLK.CLK_DOMAIN">design_1_AD9283_0_4_adc_clk</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.ADC_CLK.ASSOCIATED_BUSIF"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.ADC_CLK.ASSOCIATED_RESET"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.ADC_CLK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>CLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.FREQ_HZ">50000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.PHASE">0.000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.CLK_DOMAIN">design_1_processing_system7_0_0_FCLK_CLK0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_BUSIF"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_RESET"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.CLK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:memoryMaps>
+    <spirit:memoryMap>
+      <spirit:name>S00_AXI</spirit:name>
+      <spirit:addressBlock>
+        <spirit:name>S00_AXI_reg</spirit:name>
+        <spirit:baseAddress spirit:format="long" spirit:resolve="user">0</spirit:baseAddress>
+        <spirit:range spirit:format="long">4096</spirit:range>
+        <spirit:width spirit:format="long">32</spirit:width>
+        <spirit:usage>register</spirit:usage>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>OFFSET_BASE_PARAM</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S00_AXI.S00_AXI_REG.OFFSET_BASE_PARAM">C_S00_AXI_BASEADDR</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>OFFSET_HIGH_PARAM</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S00_AXI.S00_AXI_REG.OFFSET_HIGH_PARAM">C_S00_AXI_HIGHADDR</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:addressBlock>
+    </spirit:memoryMap>
+  </spirit:memoryMaps>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesis</spirit:name>
+        <spirit:displayName>Verilog Synthesis</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>AD9283_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Mar 17 20:21:43 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:24bcbc63</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_synthesisconstraints</spirit:name>
+        <spirit:displayName>Synthesis Constraints</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis.constraints</spirit:envIdentifier>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:24bcbc63</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesiswrapper</spirit:name>
+        <spirit:displayName>Verilog Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>design_1_AD9283_0_4</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Mar 17 20:21:43 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:24bcbc63</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogbehavioralsimulation</spirit:name>
+        <spirit:displayName>Verilog Simulation</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>AD9283_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogbehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Mar 17 20:21:43 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:7c22c2ec</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsimulationwrapper</spirit:name>
+        <spirit:displayName>Verilog Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>design_1_AD9283_0_4</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Mar 17 20:21:43 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:7c22c2ec</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_externalfiles</spirit:name>
+        <spirit:displayName>External Files</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Mar 17 20:22:10 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:24bcbc63</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>adc_clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>reset_n_adc</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>pin_flag</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>adc_input_data</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awaddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wstrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_araddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
+        <spirit:displayName>C S00 AXI DATA WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXI data bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH" spirit:order="3" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S00_AXI_ADDR_WIDTH</spirit:name>
+        <spirit:displayName>C S00 AXI ADDR WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXI address bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH" spirit:order="4" spirit:rangeType="long">4</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_6fc15197</spirit:name>
+      <spirit:enumeration>32</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_ce1226b1</spirit:name>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/b109/hdl/AD9283_v1_0_S00_AXI.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/b109/hdl/AD9283_v1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/design_1_AD9283_0_4.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/b109/hdl/AD9283_v1_0_S00_AXI.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/b109/hdl/AD9283_v1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/design_1_AD9283_0_4.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>design_1_AD9283_0_4.dcp</spirit:name>
+        <spirit:userFileType>dcp</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_AD9283_0_4_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_AD9283_0_4_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_AD9283_0_4_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_AD9283_0_4_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>My new AXI IP</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
+      <spirit:displayName>C S00 AXI DATA WIDTH</spirit:displayName>
+      <spirit:description>Width of S_AXI data bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197" spirit:order="3">32</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_DATA_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_ADDR_WIDTH</spirit:name>
+      <spirit:displayName>C S00 AXI ADDR WIDTH</spirit:displayName>
+      <spirit:description>Width of S_AXI address bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_ADDR_WIDTH" spirit:order="4" spirit:rangeType="long">4</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_ADDR_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_BASEADDR</spirit:name>
+      <spirit:displayName>C S00 AXI BASEADDR</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_BASEADDR" spirit:order="5" spirit:bitStringLength="32">0xFFFFFFFF</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_BASEADDR">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_HIGHADDR</spirit:name>
+      <spirit:displayName>C S00 AXI HIGHADDR</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_HIGHADDR" spirit:order="6" spirit:bitStringLength="32">0x00000000</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_HIGHADDR">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">design_1_AD9283_0_4</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>AD9283_v1.0</xilinx:displayName>
+      <xilinx:coreRevision>41</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2715ca2f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@312feac6_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cec7faf_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2891db58_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f13be04_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56b62072_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@702297e2_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@514bc292_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@777c374b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@659219fd_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ac177f6_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d487c4b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@704422d2_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59d51000_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b81d36e_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bc2e56c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a4cc32a_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bfb26d9_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b837b76_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43f6de76_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a5a2f93_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@663c14ac_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f1d51ed_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43b05c61_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@607130f5_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@199f1fa4_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@464584a3_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@91bd12b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@414b48e4_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a914085_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c8b0fa6_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@188cc542_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f337e42_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18475388_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14809497_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54e12aa7_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bf9671f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f0b0975_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@619c3ffe_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57f52470_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b075e2c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@386393a8_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a68997b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1832527f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c890e1b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19cc0e24_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e7098be_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5445e996_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27ac9bcf_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1703fc47_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26ce2998_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@470eddd9_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23f98da3_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ce9d244_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1de3e284_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e5b621a_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d3380a5_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bb9cc8d_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49f86372_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8ab4054_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6dcc690d_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3669a18b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74e14136_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26dbefa2_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22ed57f4_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64bbf3d7_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f35e46c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25b0d3a1_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@614eb92_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c9a544a_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d72391c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32b8b1c1_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11333ae2_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6856296b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b23e68b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2359013f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7080ce67_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@667f7da7_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e3b6a91_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69a374b3_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b85d7f9_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37c7be79_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64ae8c91_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@435d1b57_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b3c8899_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@782faa69_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f6c938e_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@598cb606_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30fb32f3_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@200c0032_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fa24af0_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43d31b41_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68be9b3d_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51da4e22_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a25b9eb_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7faf5596_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d862fdf_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d58ab2f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a354538_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49281bca_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14f961a8_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e5d550_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@80b2b3c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f40508b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@201326be_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a36e556_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3471cf57_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43f68f30_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cbbceac_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70799002_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@afd0be5_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a67689b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ac58dc0_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71f7aaec_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14a682c0_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@425dcc9c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@137faad4_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c76e784_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22b9a4bd_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35aa87fa_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3519455_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@155c635f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7514940e_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56b5b689_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11e25565_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f156a8a_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59999b7f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2496f5d_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5801ffeb_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12623572_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@312354ec_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cfb0d6b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32a8c5cd_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5806d00b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29611618_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@283ed794_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e2bf57f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a6b726a_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e7903aa_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ce2cf8e_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8c94eb1_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@374c9717_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d27110b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2672a39d_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@390e609c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66049ff7_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d3556fa_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@139566ad_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59465283_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@264b7eb4_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64841a2_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3287f398_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@494f09fa_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65c30c17_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7780f7e2_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25b1b80c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ab19ea2_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ee5d6a6_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@120dfc9b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@312a971c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61e575b3_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f9ce132_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f721451_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6543a2e1_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fdb4d95_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a613ce9_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59a207cc_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62c652d3_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2341ff15_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c4e36c0_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23a5892d_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48a47e0f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@dbc3fba_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@234d842_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41e5c630_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45a09692_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f7c3b30_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d1ac949_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c1eebb8_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56ecf5b2_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26a1ba8c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8d9c39b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@522cccc6_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fba812b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64d8fb91_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b11ef54_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51c0f70c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c171a38_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41e8a42_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38dd76e2_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cd9cd95_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b958339_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ec38865_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2777e5e3_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cbbf134_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@676bdc9c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35364f8e_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f6273a0_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42941be9_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@277bbce0_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ab4268b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17116894_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52c560a1_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dcf0dc9_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57878f91_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a8ee4db_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1012d18_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28cc9970_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f0b5bb4_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b547b0_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a8cf55e_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fbfcd0f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e0b043f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4edb913b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c6d1a0_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54e5e9ec_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1685cd04_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@155697dc_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43128bc9_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fb7f592_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ac5490_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dea36d3_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10974bcd_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@658014a8_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a1316ba_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25f3abbe_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40ddf5d4_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35c9b374_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b0e5820_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@402c7592_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5542fba8_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3647f0ef_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@450f9b09_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50ee83a0_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5953361d_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@755411c7_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53d22cfa_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6252e599_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a8052bd_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@520d1871_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ad18a45_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@653b3ed7_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c6cd232_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@567804c9_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@404ed68c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3764373_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3302cdce_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43ff44d7_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2de683e2_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4667d3f3_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36ca400e_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10feed76_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46f6cf6f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ae09bc5_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1750e872_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29552e8d_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d32eb1a_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@687bdebf_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44bcdfe8_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56f0560f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44651ebd_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18a8ff1c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25c7c99_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15e6ed43_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fe7030c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24495bc2_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bfd0cac_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39b360cc_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f384c75_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15e4eabf_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62fb783a_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c3ae131_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c5ce250_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50c151bd_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e18da7f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70f57c4d_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@458d055_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1699f9a2_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fc6ab7b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53bc3395_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c358d85_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@127aeb60_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c82dcd_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@225065ba_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5450fbfd_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a9abd48_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e3eb0e1_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28772519_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69e34421_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a7afba5_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24b29fe2_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74e743da_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c91b593_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60d0a3d2_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bfe57fa_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@745c9b68_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fc0c51_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63575fae_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ad0bbc1_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14f99c34_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22a4bb7e_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f2580d3_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55e9cd95_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d591a3e_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3556f84b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@656fca7e_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4de178ff_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fa040ff_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51107b41_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@285360da_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13467911_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15871406_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ba5568b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30ec2229_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f20c13e_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1acdd943_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26cd8f1a_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e163453_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55708b44_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e6311e6_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@112fa7ff_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cc7b85f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a36fd1b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e49b985_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e1eaa3c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fb0292_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6993e65c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cea300_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c1f7872_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23868bd_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36bf26ec_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44cbe69a_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43437068_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13f347a6_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49942c54_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c0bb906_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a4926ef_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c4ea9e9_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15d7138c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e4415a6_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d7ddec3_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9c8d9fd_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ecf2dd4_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72b8393f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4900c469_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d300387_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44e7c5b6_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35c203e1_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d84c900_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b6e7bc5_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5df4aee4_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@322e47d2_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5059cc5a_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fe76bb7_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a4970d8_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7bd62215_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e228c9_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4414f9a9_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22ce8da9_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12bd556d_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@baded87_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7040c407_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79426f08_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b881493_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cc17c29_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b026b85_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45ca754_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@782a6f53_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38a46635_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43214a6_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7892defb_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5db17026_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cfc8001_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@114b55b8_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d53cc24_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63b598af_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36cfe59b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@194cd6f9_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ce1d5c4_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@252d1d3a_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c82b97b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c162bc6_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a7ea400_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58237708_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29f92e42_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b4e734d_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11b42222_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1632771e_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26dc0570_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15900d5a_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@287155d_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6db4d8e4_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@291052a1_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67ac7431_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d646814_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d19cd58_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d0b1958_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@186db4f8_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d86232b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@498324c6_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@797dfcf9_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1aa01828_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5eeb1004_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4afa9e8d_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fadcfa0_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ce65369_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cd18655_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c792b14_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20d645b9_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@222afcc6_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@759c1cdf_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d08c830_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@82de8d1_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f57ad1e_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@87dd154_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79fb4d3c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e20cdba_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a0c957_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bfab49_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50dc8b1a_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10381896_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c4a6bae_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@280eae71_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27e90b9b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a50d91a_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31928e96_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b476072_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4984b65a_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58f61a24_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2292ba8f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ef76563_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6393922c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@754c4da3_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b42406e_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7934b98a_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d6ffba7_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ef3439a_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dfa1703_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f2215eb_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1034013f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b824e39_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@343c64d6_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e3043da_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4834f615_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e9d834f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e8c7ecc_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45807532_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3037621f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d7a7219_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51850e2_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69c6745f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@466c0edf_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b4596b3_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44237881_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d800c88_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41ca7e58_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75db749f_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c7e8588_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57adaf9c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e5f3018_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@225e2a9e_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22a27d0e_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a31d181_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20d6f370_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18e529d1_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18f6e4f4_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@651a009c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ad4e0b9_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f87228c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bd0f658_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@342abafe_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fb5e59d_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62cc17e0_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40b277d2_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15b0890d_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8fb2945_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1489124_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1402f176_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@214d456e_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28cbaf98_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5507cf2a_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@226bb4b5_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c9bdc68_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38c1581c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b959d8c_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42d18dce_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c0f0a41_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76e7a1c9_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d364ace_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8ec9a24_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c95a5cd_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f65ebe1_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c681ec5_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@118e7b1b_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@488a6665_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15d7404d_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68a6ea2e_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71bef449_ARCHIVE_LOCATION">c:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/ip_repo/AD9283_1.0</xilinx:tag>
+      </xilinx:tags>
+      <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.ADC_CLK.CLK_DOMAIN" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ADDR_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ARUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.AWUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.BUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.DATA_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_BRESP" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_BURST" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_CACHE" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_LOCK" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_PROT" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_QOS" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_REGION" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_RRESP" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_WSTRB" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ID_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.MAX_BURST_LENGTH" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.NUM_READ_OUTSTANDING" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.PROTOCOL" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.READ_WRITE_MODE" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.RUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.WUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI_CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI_CLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
+      </xilinx:configElementInfos>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="baf556ed"/>
+      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="0dcdba74"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="93cede58"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="6992ea72"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="58dbdf14"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

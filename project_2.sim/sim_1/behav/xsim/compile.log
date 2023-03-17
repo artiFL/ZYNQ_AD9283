@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/new/ad9283_hard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad9283_hard
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.ip_user_files/bd/design_1/ipshared/45d9/hdl/AD9283_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AD9283_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.ip_user_files/bd/design_1/ipshared/45d9/hdl/AD9283_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AD9283_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_AD9283_0_4/sim/design_1_AD9283_0_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_AD9283_0_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_ad9283_hard_0_0/sim/design_1_ad9283_hard_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_ad9283_hard_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-311] analyzing module design_1_ps7_0_axi_periph_0
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_UYSKKA
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programming/samplecode/FPGA/ExpansionModules/AD9283ADCExpansionModule/project_2/project_2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper

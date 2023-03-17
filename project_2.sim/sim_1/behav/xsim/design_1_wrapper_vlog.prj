@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../project_2.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../project_2.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" --include "A:/Work/XX/Vivado/2019.1/data/xilinx_vip/include" \
+"../../../../project_2.srcs/sources_1/new/ad9283_hard.v" \
+"../../../../project_2.ip_user_files/bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
+"../../../../project_2.ip_user_files/bd/design_1/ipshared/45d9/hdl/AD9283_v1_0_S00_AXI.v" \
+"../../../../project_2.ip_user_files/bd/design_1/ipshared/45d9/hdl/AD9283_v1_0.v" \
+"../../../../project_2.ip_user_files/bd/design_1/ip/design_1_AD9283_0_4/sim/design_1_AD9283_0_4.v" \
+"../../../../project_2.ip_user_files/bd/design_1/ip/design_1_ad9283_hard_0_0/sim/design_1_ad9283_hard_0_0.v" \
+"../../../../project_2.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../project_2.ip_user_files/bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+"../../../../project_2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
